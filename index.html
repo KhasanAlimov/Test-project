@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Тестоовое задание - Вёрстка</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <div id="top-header" class="d-flex-jcsb f-wrap">
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="sale">Распродажа до 15.02.16!</div>
+      <div class="tel-nums">
+        +7 (343) 252 52 52<br>
+        +7 (343) 252 52 52
+      </div>
+    </div>
+
+    <!-- Меню -->
+    <nav class="d-flex-jcsb">
+      <div id="menu-icon"><i class="fas fa-bars"></i></div>
+      <ul class="menu">
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Доставка и оплата</a>
+        </li>
+        <li>
+          <a href="#">Прайс-лист</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+        <div id="close-icon"><i class="fas fa-times"></i></div>
+      </ul>
+      <div class="sale-md">Распродажа до 15.02.16!</div>
+    </nav>
+  </header>
+
+  <!-- Скрипт -->
+  <script>
+    let menuButton = document.querySelector('#menu-icon');
+    let closeButton = document.querySelector('#close-icon');
+    let menu = document.querySelector('.menu');
+
+    menuButton.onclick = () => {
+      menu.classList.toggle('openMenu');
+    }
+    closeButton.onclick = () => {
+      menu.classList.remove('openMenu');
+    }
+  </script>
+
+  <!-- Контент -->
+  <main>
+    <div id="slid-container">
+      <img src="img/slider.png" alt="пейзаж">
+    </div>
+
+    <div id="content" class="d-flex-jcsb">
+
+      <!-- Новости -->
+      <div class="news">
+        <h2 class="heading">Новости</h2>
+        <p>
+        <i>14 сентября 2015 г.</i><br>
+        Акция на входные двери Фалько!
+        </p>
+        <p>
+        <i>14 сентября 2015 г.</i><br>
+        Установка межкомнатных дверй в подарок при покупке 3-х полотен!
+        </p>
+        <p>
+        <i>14 сентября 2015 г.</i><br>
+        Новинка! Термо двери Форт!
+        </p>
+        <p>
+        <i>14 сентября 2015 г.</i><br>
+        Установка межкомнатных дверй в подарок при покупке 3-х полотен!
+        </p>
+        <p>
+        <i>14 сентября 2015 г.</i><br>
+        Новинка! Термо двери Форт!
+        </p>
+        <p>
+          <a href="#">Архив акций</a>
+        </p>
+        
+      </div>
+
+      <!-- Блог -->
+      <div class="blog">
+        <h1 class="heading">Компания «Шнайдер Консалт»</h1>
+        <p>Мы эксперты в запуске интернет-магазинов товаров для дома, строительства и ремонта. Совместный опыт нашей команды в
+        развитии и продвижении проектов в сфере электронной торговли более 15 лет.</p>
+
+        <p>Мы создали надежную технологию, которая позволяет быстро и уверено выводить интернет-магазины на продажи и
+        самоокупаемость. Если мы беремся за проект, значит уверены в достижении бизнес результатов для наших клиентов.</p>
+
+        <div class="what-do d-flex-jcsb f-wrap">
+          <h2 class="heading">Чем мы занимаемся?</h2>
+          <div>
+            <h4>Только товары для дома, строительства и ремонта.</h4>
+            <p>Нельзя одинаково хорошо разбираться во всех отраслях рынка. Поэтому мы работаем на тех секторах рынка, на котором имеем
+            большой опыт и разбираемся лучше всего. И это гарантирует результат нашим клиентам.</p>
+          </div>
+          <div>
+            <h4>Строим комплексный маркетинг и продажи.</h4>
+            <p>Мы не делаем просто сайты. Не занимаемся просто продвижением. Это не принесет результаты. Только комплексный маркетинг и
+            и система продаж могут принести вам доходы и прибыль.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Подвал -->
+  <footer>
+    <div id="info" class="d-flex-jcsb f-wrap">
+      <div class="copyright">
+        ©2012-2016 ЗАО «Компания»<br>
+        info@name.ru
+      </div>
+
+      <!-- Навигация -->
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">Прайс-лист</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Компания -->
+      <div class="company">
+        <a href="#">Разработка сайта —</a><br>
+        компания «Шнайдер Консалт»
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

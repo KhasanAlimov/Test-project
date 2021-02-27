@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+
+#top-header, nav ul, #content, #info {
+  max-width: 980px;
+  margin: auto;
+}
+.d-flex-jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+/* Шапка */
+header {
+  background-color: #dcdcdc;
+  width: 100%;
+}
+
+#top-header {
+  align-items: center;
+  padding: 50px 3%;
+}
+#top-header div {
+  width: 35%;
+  white-space: nowrap;
+}
+.logo img {
+  width: 100%;
+}
+#top-header .sale {
+  color: #8c8c8c;
+  width: 25%;
+  text-align: center;
+}
+#top-header .tel-nums {
+  color: #767676;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Меню */
+header nav {
+  background-color: #777777;
+  color: #fff;
+  padding: 10px 3%;
+  align-items: center;
+}
+#close-icon {
+  display: none;
+  font-size: 25px;
+  text-align: right;
+  cursor: pointer;
+  margin: 25px 20px 0 0;
+}
+#menu-icon {
+  display: none;
+  font-size: 25px;
+  width: 20%;
+  cursor: pointer;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  transition: 0.5s;
+}
+header nav ul li:not(:last-child) {
+  border-right: solid 2px #fff;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+.sale-md {
+  display: none;
+  width: 70%;
+  text-align: right;
+}
+.openMenu {
+  visibility: visible !important;
+  top: 0 !important;
+}
+
+/* Слайдер */
+#slid-container img {
+  width: 100%;
+  max-height: 500px;
+}
+
+/* Блог */
+#content {
+  margin: 50px auto 150px auto;
+  padding: 0 2%;
+}
+#content > div {
+  padding: 15px 3%;
+}
+
+/* Новости */
+#content .news {
+  width: 30%;
+  background-color: #777777;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+}
+#content .news .heading {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+#content p {
+  margin: 25px 0;
+}
+#content .news p:last-child {
+  margin: 60px 0 0 0;
+  text-align: right;
+}
+#content .news a {
+  color: #fff;
+}
+
+/* Блог */
+#content .blog {
+  width: 65%;
+  color: #767676;
+}
+#content .blog .heading {
+  font-weight: 400;
+}
+
+#content .blog .what-do .heading {
+  width: 100%;
+  margin: 15px 0 25px 0;
+}
+#content .blog .what-do div {
+  width: 45%;
+}
+
+/* Подвал */
+footer {
+  background-color: #777777;
+  color: #fff;
+  padding: 50px 3%;
+}
+footer div {
+  min-width: 215px;
+  margin: 10px 0;
+}
+footer a {
+  color: #fff;
+}
+.navigation ul {
+  list-style: none;
+}
